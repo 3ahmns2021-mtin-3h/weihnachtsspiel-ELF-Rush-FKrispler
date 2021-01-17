@@ -17,8 +17,13 @@ public class Player : MonoBehaviour
     {
         if (collision.name == "DamageItem")
         {
-            Debug.Log("in if in DamageItem + 1");
+ 
             countCollisions--;
+        }
+
+        else if (collision.name == "PickUp")
+        {
+            countCollisions++;
         }
 
     }
