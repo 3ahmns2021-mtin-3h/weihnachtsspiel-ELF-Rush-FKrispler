@@ -40,11 +40,11 @@ public class Player : MonoBehaviour
             scoreDisplay.text = points.ToString();
         }
 
-        else if (collision.name.Contains("DamegeItem"))
+        else if (collision.name.Contains("DamageItem"))
         {
-            Destroy(collision.gameObject);
             health--;
             healthDisplay.text = health.ToString();
+            Destroy(collision.gameObject);
         }
 
     }
