@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
 
     int countCollisions = 0;
+    public bool collideTroll = false;
+    public int points = 0;
+    public int health = 3;
+    public TextMeshProUGUI scoreDisplay;
+    public TextMeshProUGUI healthDisplay;
 
     // Start is called before the first frame update
     void Start()
@@ -17,13 +23,28 @@ public class Player : MonoBehaviour
     {
         if (collision.name == "DamageItem")
         {
- 
             countCollisions--;
+    
         }
 
         else if (collision.name == "PickUp")
         {
             countCollisions++;
+        }
+
+        else if (collision.name.Contains("PickUp"))
+        {
+            Destroy(collision.gameObject);
+            collideTroll = true;
+            points++;
+            scoreDisplay.text = points.ToString();
+        }
+
+        else if (collision.name.Contains("DamegeItem"))
+        {
+            Destroy(collision.gameObject);
+            health--;
+            healthDisplay.text = health.ToString();
         }
 
     }
