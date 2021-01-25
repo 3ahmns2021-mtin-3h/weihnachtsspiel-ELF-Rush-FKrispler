@@ -30,7 +30,7 @@ public class Spawn_DamageItem : MonoBehaviour
     {
         var clones = Instantiate(damageItemPrefab);
         clones.GetComponent<Transform>().SetParent(parentDamageSpawnGo.GetComponent<Transform>(), false);
-        clones.GetComponent<Transform>().localPosition = new Vector3(Random.Range(-400, 400), 400, 0);
+        clones.GetComponent<Transform>().localPosition = new Vector3(Random.Range(-400, 400), 0, 0);
         clones.GetComponent<Transform>().localRotation = Quaternion.identity;
         clones.GetComponent<Transform>().localScale = new Vector3(0.5f, 0.5f, 0.5f);
     }
