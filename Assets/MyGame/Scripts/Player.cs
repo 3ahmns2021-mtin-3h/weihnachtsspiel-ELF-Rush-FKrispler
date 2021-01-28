@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public int health = 3;
     public TextMeshProUGUI scoreDisplay;
     public TextMeshProUGUI healthDisplay;
+    public TextMeshProUGUI gameOverText;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +53,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+         if (health == 0)
+        {
+            gameOverText.text = "GAME OVER";
+        }
     }
 }

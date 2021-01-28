@@ -6,6 +6,7 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI timer;
+    public TextMeshProUGUI finishText;
     private float timeInSec;
 
     // Start is called before the first frame update
@@ -29,6 +30,7 @@ public class Timer : MonoBehaviour
         else
         {
             Debug.Log("Stop Game");
+            finishText.text = "Finished";
         }
     }
 }
