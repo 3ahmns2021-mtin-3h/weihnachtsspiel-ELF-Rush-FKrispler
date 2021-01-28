@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public bool collideTroll = false;
     public int points = 0;
     public int health = 3;
+    public GameObject elfObjekt;
+    public GameObject snowmanObjekt;
     public TextMeshProUGUI scoreDisplay;
     public TextMeshProUGUI healthDisplay;
     public TextMeshProUGUI gameOverText;
@@ -56,6 +58,8 @@ public class Player : MonoBehaviour
          if (health == 0)
         {
             gameOverText.text = "GAME OVER";
+            elfObjekt.SetActive(false);
+            snowmanObjekt.SetActive(false);
         }
     }
 }

@@ -5,6 +5,8 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    public GameObject elfObjekt;
+    public GameObject snowmanObjekt;
     public TextMeshProUGUI timer;
     public TextMeshProUGUI finishText;
     private float timeInSec;
@@ -29,8 +31,9 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            Debug.Log("Stop Game");
-            finishText.text = "Finished";
+            finishText.text = "TIME IS UP";
+            elfObjekt.SetActive(false);
+            snowmanObjekt.SetActive(false);
         }
     }
 }
