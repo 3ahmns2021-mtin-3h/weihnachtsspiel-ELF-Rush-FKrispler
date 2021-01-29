@@ -12,8 +12,13 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
     }
 
-    public void Back()
+    public void back()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void home()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 }
