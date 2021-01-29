@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Spawn_DamageItem : MonoBehaviour
 {
@@ -16,7 +14,6 @@ public class Spawn_DamageItem : MonoBehaviour
         SpawnTheDamageItems();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Time.time > nextSpawn)
