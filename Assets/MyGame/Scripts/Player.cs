@@ -10,12 +10,14 @@ public class Player : MonoBehaviour
     public bool collideTroll = false;
     public int points = 0;
     public int health = 3;
+    public GameObject homeButton;
     public GameObject elfObjekt;
     public GameObject snowmanObjekt;
     public TextMeshProUGUI scoreDisplay;
     public TextMeshProUGUI healthDisplay;
     public TextMeshProUGUI gameOverText;
     public TextMeshProUGUI timeText;
+  
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +64,12 @@ public class Player : MonoBehaviour
             elfObjekt.SetActive(false);
             snowmanObjekt.SetActive(false);
             timeText.enabled = false;
+            homeButton.SetActive(true);
+        }
+
+         else if (health > 0)
+        {
+            homeButton.SetActive(false);
         }
     }
 }
