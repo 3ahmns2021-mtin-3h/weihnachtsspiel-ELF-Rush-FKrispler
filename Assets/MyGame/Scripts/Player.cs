@@ -4,12 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
-    public bool collideTroll = false;
     public int points = 0;
     public int health = 3;
-    public GameObject elfObjekt;
-    public GameObject snowmanObjekt;
     public TextMeshProUGUI scoreDisplay;
     public TextMeshProUGUI healthDisplay;
     public TextMeshProUGUI timeText;
@@ -23,7 +19,6 @@ public class Player : MonoBehaviour
        if (collision.name.Contains("PickUp"))
         {
             Destroy(collision.gameObject);
-            collideTroll = true;
             points++;
             scoreDisplay.text = points.ToString();
         }
@@ -41,9 +36,6 @@ public class Player : MonoBehaviour
     {
          if (health == 0)
         {
-            elfObjekt.SetActive(false);
-            snowmanObjekt.SetActive(false);
-
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
 
