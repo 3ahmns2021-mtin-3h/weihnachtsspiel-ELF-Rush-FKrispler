@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -10,7 +11,6 @@ public class Player : MonoBehaviour
     public bool collideTroll = false;
     public int points = 0;
     public int health = 3;
-    public GameObject homeButton;
     public GameObject elfObjekt;
     public GameObject snowmanObjekt;
     public TextMeshProUGUI scoreDisplay;
@@ -63,13 +63,9 @@ public class Player : MonoBehaviour
             gameOverText.text = "GAME OVER";
             elfObjekt.SetActive(false);
             snowmanObjekt.SetActive(false);
-            timeText.enabled = false;
-            homeButton.SetActive(true);
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
 
-         else if (health > 0)
-        {
-            homeButton.SetActive(false);
-        }
     }
 }

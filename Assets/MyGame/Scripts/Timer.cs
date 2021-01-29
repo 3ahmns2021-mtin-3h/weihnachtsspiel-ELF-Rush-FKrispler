@@ -5,7 +5,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public GameObject homeButton;
+    public GameObject santaButton;
     public GameObject elfObjekt;
     public GameObject snowmanObjekt;
     public TextMeshProUGUI timer;
@@ -30,6 +30,7 @@ public class Timer : MonoBehaviour
         if (timeInSec > 0)
         {
             timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            santaButton.SetActive(false);
         }
         else
         {
@@ -37,7 +38,7 @@ public class Timer : MonoBehaviour
             elfObjekt.SetActive(false);
             snowmanObjekt.SetActive(false);
             timeText.enabled = false;
-            homeButton.SetActive(true);
+            santaButton.SetActive(true);
         }
     }
 }
