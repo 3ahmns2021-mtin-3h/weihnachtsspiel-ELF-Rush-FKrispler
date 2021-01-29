@@ -954,6 +954,7 @@ MonoBehaviour:
   snowmanObjekt: {fileID: 939194176}
   timer: {fileID: 544837278}
   finishText: {fileID: 2009477376}
+  timeText: {fileID: 544837278}
 --- !u!4 &827809833
 Transform:
   m_ObjectHideFlags: 0
@@ -1486,6 +1487,7 @@ MonoBehaviour:
   scoreDisplay: {fileID: 278930462}
   healthDisplay: {fileID: 1273672282}
   gameOverText: {fileID: 375392923}
+  timeText: {fileID: 544837278}
 --- !u!1 &1649850489
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI scoreDisplay;
     public TextMeshProUGUI healthDisplay;
     public TextMeshProUGUI gameOverText;
+    public TextMeshProUGUI timeText;
 
     // Start is called before the first frame update
     void Start()
@@ -60,6 +61,7 @@ public class Player : MonoBehaviour
             gameOverText.text = "GAME OVER";
             elfObjekt.SetActive(false);
             snowmanObjekt.SetActive(false);
+            timeText.enabled = false;
         }
     }
 }

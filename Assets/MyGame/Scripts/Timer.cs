@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     public GameObject snowmanObjekt;
     public TextMeshProUGUI timer;
     public TextMeshProUGUI finishText;
+    public TextMeshProUGUI timeText;
     private float timeInSec;
 
     // Start is called before the first frame update
@@ -34,6 +35,7 @@ public class Timer : MonoBehaviour
             finishText.text = "TIME IS UP";
             elfObjekt.SetActive(false);
             snowmanObjekt.SetActive(false);
+            timeText.enabled = false;
         }
     }
 }
