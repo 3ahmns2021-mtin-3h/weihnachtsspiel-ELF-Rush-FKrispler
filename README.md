@@ -7,22 +7,25 @@ Introduction/Project summary
 (OS, Unity 2020 1.5f1 , Visual Studio 2019, used SDKs)
 
 ### Target platform: 
-WebGL, Ref, Res 960 x 600, screen independent, VR incl. reference resolution 
+WebGL, Ref, Res 960 x 600, screen independent
 
 ### Visuals: 
-vis skizze (concept and experience), Video
+Self drawn visuals
 
 ### Necessary setup/execution steps: 
-Installation process, e.g. step by step instructions that I can run the project after cloning it
+Strat the Unity Projekt 
 
 ### Third party material: 
-(if used Fonts, Sounds, Music, Graphics, Materials, Code etc.)
+-
 
 ### Project state: 
-incl. progress in percent
+70%
 
-### Limitations: 
+### Limitations:
+-
 
-### Lessons Learned: 
+### Lessons Learned:
+
+TMP Text, if statement, random spawn rate, changing scenes
 
 Copyright by FKrispler
