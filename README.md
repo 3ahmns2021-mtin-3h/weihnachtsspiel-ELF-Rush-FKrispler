@@ -5,7 +5,8 @@ Trolle haben dem Weihnachtsmannseine Geschenke gestohlen.Einem seiner Elfen wir 
 
 ### Development platform: 
 (OS, Unity 2020 1.5f1 , Visual Studio 2019, used SDKs)
-      ### Necessary setup/execution steps: 
+     
+   - ### Necessary setup/execution steps: 
            Strat the Unity Projekt 
       
 ### Target platform: 
