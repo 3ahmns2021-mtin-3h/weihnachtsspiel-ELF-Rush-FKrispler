@@ -14,6 +14,13 @@ WebGL, Ref, Res 960 x 600, screen independent
 ### Visuals: 
 Self drawn visuals
 
+<div>
+<img src="./Screenshots/home.JPG" width="250">
+<img src="./Screenshots/game.JPG" width="250">
+<img src="./Screenshots/fail.JPG" width="250">
+<img src="./Screenshots/win.JPG" width="250">
+</div>
+
 
 
 ### Third party material: 
