@@ -7,7 +7,7 @@ Trolle haben dem Weihnachtsmannseine Geschenke gestohlen.Einem seiner Elfen wir 
 (OS, Unity 2020 1.5f1 , Visual Studio 2019, used SDKs)
      
    - ### Necessary setup/execution steps: 
-           Strat the Unity Projekt 
+           Start the Unity Projekt 
       
 ### Target platform: 
 WebGL, Ref, Res 960 x 600, screen independent
