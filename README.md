@@ -37,4 +37,19 @@ Self drawn visuals
 
 TMP Text, if statement, random spawn rate, changing scenes
 
+## MVP
+
+•Aufsetzen des 2DProjektsscreen-independent (960x600)mitgit/GitHub
+
+•Player movement horizontal
+
+•Timer 1 Minute(mechanic & display)
+
+•Collectibles& Enemiesspawnen& movement
+
+•Score mechanic:Collectibles, Player, Enemies Collisions& Triggerevents
+
+•Score display
+
+
 Copyright by FKrispler
